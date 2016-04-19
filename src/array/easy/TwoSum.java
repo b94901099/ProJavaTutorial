@@ -11,9 +11,9 @@ public class TwoSum {
 		Map<Integer, List<Integer>> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
 			if (!map.containsKey(nums[i])) {
-				List<Integer> list = new ArrayList<Integer>();
-				list.add(i);
-				map.put(nums[i], list);
+				List<Integer> indexes = new ArrayList<Integer>();
+				indexes.add(i);
+				map.put(nums[i], indexes);
 			} else {
 				List<Integer> list = map.get(nums[i]);
 				list.add(i);
