@@ -13,6 +13,8 @@ public class FindMinimuminRotatedSortedArray {
 		// find the first element <= target
 		while (start + 1 < end) {
 			int mid = start + (end - start) / 2;
+			System.out.println(String.format("start=%d;end=%d;mid=%d", start,
+					end, mid));
 			if (nums[mid] <= target) {
 				end = mid;
 			} else {
